@@ -1,5 +1,7 @@
+/*import inter and DM serif text from google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
+/*general*/
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +14,7 @@ body {
 h1{
     font-family: "DM Serif Text", sans-serif;
     font-size: 100px;
+    color:  #3628a0;
     text-align: center;
     padding-top: 100px;
 }
@@ -21,6 +24,7 @@ p{
     padding: 25px 35px;
 }
 
+/*sidebar*/
 .sidebar {
     position: fixed;
     top: 0;
@@ -61,7 +65,7 @@ p{
     color: #3628a0;
 }
 
-
+/*buttons*/
 .close-btn {
     display: none;
 }
@@ -72,6 +76,7 @@ p{
     transition: all 0.3s ease;
 }
 
+/*overlay for mobile*/
 .overlay {
     position: fixed;
     top: 0;
@@ -90,6 +95,7 @@ p{
     visibility: visible;
 }
 
+/*main page*/
 .main-content {
     transition: margin-left 0.3s ease;
 }
@@ -109,6 +115,7 @@ header {
     margin-right: 20px;
 }
 
+/*desktop adjustments*/
 @media (min-width: 768px) {
     .sidebar {
         left: -250px;
@@ -128,7 +135,14 @@ header {
     }
 }
 
+/*mobile adjustments*/
 @media (max-width: 767px) {
+    h1{
+        font-size: 50px;
+    }
+    p{
+        font-size: 20px;
+    }
     .sidebar {
         width: 280px;
         left: -280px;
