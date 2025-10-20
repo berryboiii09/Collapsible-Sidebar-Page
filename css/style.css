@@ -69,8 +69,8 @@ p{
 .close-btn {
     display: none;
 }
-
 .menu-btn.active {
+    color: black;
     background-color: #ddd;
     transform: rotate(90deg);
     transition: all 0.3s ease;
@@ -108,11 +108,16 @@ header {
 }
 
 .menu-btn {
-    background: none;
+    background-color: #3628a0;
+    border-radius: 5px;
+    padding: 6px 10px;
+    color: white;
     border: none;
     font-size: 24px;
     cursor: pointer;
     margin-right: 20px;
+    transform: rotate(360deg);
+    transition: all 0.3s ease;
 }
 
 /*desktop adjustments*/
@@ -149,7 +154,7 @@ header {
     }
 
     .menu-btn {
-        padding: 10px;
+        padding: 6px 10px;
     }
 
     .close-btn {
